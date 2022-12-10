@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private float jumpForce = 11.0f;
 
     private Rigidbody2D rigidbody;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
 
     private UserInputs.IPlayerMovementHelper playerMovementHelper;
 
@@ -19,20 +21,22 @@ public class PlayerMovement : MonoBehaviour
 
     private const string GROUND_TAG = "Ground";
     private const string ENEMY_TAG = "Enemy";
+    private const string ANIMATION_CONDITION_IS_WALKING = "IsWalking";
    
 
 
     void Start() {
         rigidbody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         playerMovementHelper = new KeyboardPlayerMovementHelper();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
         HandlePlayerMovement();
+        AnimatePlayer();
     }
 
     private void FixedUpdate()
@@ -66,6 +70,23 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.gameObject.CompareTag(ENEMY_TAG))
             Destroy(gameObject);
+    }
+
+    private void AnimatePlayer()
+    {
+        if(movemnetX > 0)
+        {
+            animator.SetBool(ANIMATION_CONDITION_IS_WALKING, true);
+            spriteRenderer.flipX = false;
+        }
+        else if (movemnetX < 0){
+            animator.SetBool(ANIMATION_CONDITION_IS_WALKING, true);
+            spriteRenderer.flipX = true;
+        }
+        else
+        {
+            animator.SetBool(ANIMATION_CONDITION_IS_WALKING, false);
+        }
     }
 
 }
