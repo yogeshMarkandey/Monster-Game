@@ -68,8 +68,9 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
 
 
-        if (collision.gameObject.CompareTag(ENEMY_TAG))
-            Destroy(gameObject);
+        // To kill player
+        // if (collision.gameObject.CompareTag(ENEMY_TAG))
+          //  Destroy(gameObject);
     }
 
     private void AnimatePlayer()

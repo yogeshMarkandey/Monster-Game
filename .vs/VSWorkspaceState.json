@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Monster-Chase",
+    "\\Monster-Chase\\Assets",
+    "\\Monster-Chase\\Assets\\Scripts",
+    "\\Monster-Chase\\Assets\\Scripts\\Common",
+    "\\Monster-Chase\\Assets\\Scripts\\Enemy",
+    "\\Monster-Chase\\Assets\\Scripts\\Enemy\\Ghost",
+    "\\Monster-Chase\\Assets\\Scripts\\Player"
   ],
+  "SelectedNode": "\\Monster-Chase\\Assets\\Scripts\\Enemy\\Ghost\\GhostEnemyLogic.cs",
   "PreviewInSolutionExplorer": false
 }

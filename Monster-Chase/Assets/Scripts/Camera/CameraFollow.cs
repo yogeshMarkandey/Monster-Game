@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
 
-    private const string PLAYER_TAG = "Player";
+    
     private Transform playerTransform;
 
     [SerializeField]
@@ -19,7 +19,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerTransform = GameObject.FindGameObjectWithTag(PLAYER_TAG).transform;
+        playerTransform = GameObject.FindGameObjectWithTag(Tags.PLAYER).transform;
     }
 
     // Update is called once per frame
