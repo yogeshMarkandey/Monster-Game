@@ -7,8 +7,9 @@
     "\\Monster-Chase\\Assets\\Scripts\\Common",
     "\\Monster-Chase\\Assets\\Scripts\\Enemy",
     "\\Monster-Chase\\Assets\\Scripts\\Enemy\\Ghost",
-    "\\Monster-Chase\\Assets\\Scripts\\Player"
+    "\\Monster-Chase\\Assets\\Scripts\\Player",
+    "\\Monster-Chase\\Assets\\Scripts\\Player\\Movements"
   ],
-  "SelectedNode": "\\Monster-Chase\\Assets\\Scripts\\Enemy\\Ghost\\GhostEnemyLogic.cs",
+  "SelectedNode": "\\Monster-Chase\\Assets\\Scripts\\Enemy\\Ghost\\GhostEnemyLogic.cs.meta",
   "PreviewInSolutionExplorer": false
 }
